@@ -1,0 +1,17 @@
+.alternate {
+  font-family: alternate;
+}
+.sandiego {
+  font-family: sandiego;
+}
+.nimbus {
+  font-family: nimbus;
+}
+@keyframes scrollLine {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 80px;
+  }
+}
