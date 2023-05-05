@@ -1,7 +1,10 @@
 {
     "workbench.colorCustomizations": {
-        "activityBar.background": "#550C45",
-        "titleBar.activeBackground": "#781161",
-        "titleBar.activeForeground": "#FFFBFE"
-    }
+        "activityBar.background": "#5F0912",
+        "titleBar.activeBackground": "#860D19",
+        "titleBar.activeForeground": "#FFFBFC"
+    },
+    "cSpell.words": [
+        "Ravak"
+    ]
 }

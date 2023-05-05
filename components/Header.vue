@@ -18,13 +18,17 @@
           <span v-if="link == 2" class="sandiego">YOU ARE HERE</span>
           <div :class="{ activeMenu: link == 2 }">WHO WE ARE</div>
         </router-link>
-        <router-link to="/" class="menuItem">
+        <router-link to="/services" class="menuItem">
           <span v-if="link == 3" class="sandiego">YOU ARE HERE</span>
           <div :class="{ activeMenu: link == 3 }">SERVICES</div>
         </router-link>
-        <router-link to="/" class="menuItem">
+        <router-link to="/projects" class="menuItem">
           <span v-if="link == 4" class="sandiego">YOU ARE HERE</span>
           <div :class="{ activeMenu: link == 4 }">PROJECTS</div>
+        </router-link>
+        <router-link to="/contactUs" class="menuItem">
+          <span v-if="link == 5" class="sandiego">YOU ARE HERE</span>
+          <div :class="{ activeMenu: link == 5 }">PROJECTS</div>
         </router-link>
       </div>
       <div class="d-flex flex-column rightMenu justify-content-between">

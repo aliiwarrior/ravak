@@ -218,6 +218,7 @@
           height: 100%;
           padding: 70px 65px;
           background-color: rgb(255 200 47 / 60%);
+          mix-blend-mode: multiply;
           display: flex;
           flex-direction: column;
           position: absolute;
@@ -227,6 +228,7 @@
           transition: transform 1s;
           img {
             width: 58px;
+            mix-blend-mode: normal;
           }
           .position {
             font-style: normal;
@@ -235,6 +237,7 @@
             line-height: 24px;
             color: #ffffff;
             margin-bottom: 20px;
+            mix-blend-mode: normal;
           }
           .name {
             font-style: normal;
@@ -242,6 +245,7 @@
             font-size: 50px;
             line-height: 24px;
             color: #ffffff;
+            mix-blend-mode: normal;
           }
         }
       }
