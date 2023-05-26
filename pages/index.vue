@@ -279,12 +279,12 @@ export default {
       tl.to(".blackSquare", {
         scrollTrigger: {
           trigger: ".blackSquare",
-          start: "-20% center",
-          end: "=+50% center",
+          start: "-100% center",
+          end: "=+100% center",
           scrub: true,
-          // markers: true,
+          markers: true,
         },
-        bottom: "250px",
+        bottom: "100%",
       });
     },
     menuAnimation1() {
