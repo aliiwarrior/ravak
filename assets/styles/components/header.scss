@@ -1,6 +1,7 @@
 .header {
   * {
     z-index: 8;
+    // position: relative;
   }
   .head {
     padding: 0px 120px;
@@ -24,7 +25,7 @@
       font-weight: 700;
       font-size: 15px;
       letter-spacing: 0.13em;
-      padding-bottom: 30px;
+      padding-bottom: 15px;
       img {
         margin-left: 50px;
         cursor: pointer;
@@ -44,12 +45,13 @@
     }
   }
   .openMenu {
+    overflow: hidden;
     opacity: 0;
     display: flex;
     z-index: -1;
-    justify-content: end;
+    justify-content: flex-end;
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100vw;
     height: 100vh;
     transition: opacity 1s;
@@ -116,7 +118,7 @@
       }
     }
     .rightMenu {
-      align-items: end;
+      align-items: flex-end;
       text-align: right;
       .xIcon {
         width: 40px;
@@ -140,6 +142,121 @@
         line-height: 24px;
         letter-spacing: 0.13em;
         color: #ffffff;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .header {
+    .openMenu {
+      padding: 50px;
+      .menu {
+        left: 125px;
+        .menuItem {
+          div {
+            font-size: 230px;
+          }
+          span {
+            top: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .header {
+    .head {
+      padding: 0px 100px;
+    }
+    .openMenu {
+      .menu {
+        left: 90px;
+        .menuItem {
+          div {
+            font-size: 170px;
+          }
+          span {
+            max-width: 150px;
+            top: 90px;
+            left: -70px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .header {
+    .openMenu {
+      .menu {
+        left: 80px;
+        .menuItem {
+          div {
+            font-size: 100px;
+          }
+          span {
+            max-width: 100px;
+            top: 49px;
+            left: -60px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 720px) {
+  .header {
+    .openMenu {
+      position: fixed;
+      .rightMenu {
+        .xIcon {
+          width: 30px;
+        }
+        .socials {
+          gap: 20px;
+          img {
+            width: 20px;
+          }
+        }
+        .terms {
+          font-size: 10px;
+          gap: 0px;
+        }
+      }
+      .menu {
+        left: 45px;
+        .menuItem {
+          div {
+            font-size: 48px;
+            -webkit-text-stroke: 1px white;
+          }
+          span {
+            max-width: 50px;
+            top: 24px;
+            left: -30px;
+            font-size: 7px;
+          }
+        }
+      }
+    }
+    .head {
+      padding: 0px 50px;
+      height: 100px;
+      .logo {
+        height: 35px;
+      }
+      .rightHead {
+        padding-bottom: 8px;
+        img {
+          width: 35px;
+        }
+      }
+      .yellowLine {
+        height: 119px;
+        width: 2px;
       }
     }
   }

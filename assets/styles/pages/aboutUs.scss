@@ -1,5 +1,8 @@
 .aboutUs {
   overflow-x: hidden;
+  * {
+    position: relative;
+  }
   .topDiv {
     width: 100%;
     margin-top: 180px;
@@ -39,7 +42,7 @@
       width: 100%;
       padding-left: 68px;
       padding-right: 120px;
-      align-items: end;
+      align-items: flex-end;
       .scroll {
         height: 110px;
         margin-top: 8px;
@@ -68,7 +71,7 @@
           display: inline-block;
           position: absolute;
           left: -250px;
-          top: 400px;
+          top: -400px;
           z-index: 0;
           background: rgba(255, 255, 255, 0.25);
           background-blend-mode: luminosity;
@@ -248,6 +251,96 @@
             mix-blend-mode: normal;
           }
         }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .aboutUs {
+    .section1,
+    .section2 {
+      padding: 0px 120px;
+      img {
+        width: 50%;
+      }
+    }
+    .ourTeam {
+      padding-left: 120px;
+      .body {
+        padding-right: 120px;
+        .team {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 720px) {
+  .aboutUs {
+    .topDiv {
+      margin-top: 0px;
+      .rotateTitle {
+        h1 {
+          max-width: 300px;
+          font-size: 50px;
+        }
+        h2 {
+          font-size: 25px;
+          bottom: 80px;
+        }
+      }
+      .bottomOfDiv {
+        padding: 0px 50px;
+        .scroll {
+          &::before {
+            width: 400px;
+            height: 200px;
+            top: -200px;
+          }
+          .scrollTitle {
+            font-size: 12px;
+            min-width: 65px;
+            bottom: 50px;
+          }
+        }
+      }
+    }
+    .yellowBorder {
+      margin-top: 150px;
+      height: 150px;
+    }
+    .section1,
+    .section2 {
+      padding: 0px 50px;
+      margin-bottom: 150px;
+      .title {
+        font-size: 40px;
+        line-height: 1.3em;
+        margin-bottom: 50px;
+      }
+      p {
+        font-size: 25px;
+        line-height: 1.3em;
+      }
+      .rightDiv {
+        p {
+          font-size: 25px;
+          line-height: 1.3em;
+        }
+      }
+    }
+    .ourTeam {
+      padding-left: 50px;
+      margin-bottom: 150px;
+      .head {
+        margin-bottom: 50px;
+        .title {
+          margin-right: 50px;
+          font-size: 40px;
+        }
+      }
+      .body {
+        padding-right: 50px;
       }
     }
   }

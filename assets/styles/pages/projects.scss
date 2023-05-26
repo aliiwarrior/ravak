@@ -40,7 +40,7 @@
       width: 100%;
       padding-left: 68px;
       padding-right: 120px;
-      align-items: end;
+      align-items: flex-end;
       .scroll {
         height: 110px;
         margin-top: 8px;
@@ -140,6 +140,65 @@
         &:hover {
           -webkit-text-stroke: 3px #ffcc3f;
           -webkit-text-fill-color: #ffcc3f;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .projects {
+    .topDiv {
+      .rotateTitle {
+        margin-bottom: 150px;
+      }
+    }
+    .ourServices {
+      .menu {
+        .menu--item {
+          font-size: 120px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 720px) {
+  .projects {
+    .topDiv {
+      margin-top: 0px;
+      margin-bottom: 150px;
+      .rotateTitle {
+        h1 {
+          max-width: 300px;
+          font-size: 50px;
+          line-height: 1.2em;
+        }
+        h2 {
+          font-size: 25px;
+          top: 111px;
+        }
+      }
+      .bottomOfDiv {
+        padding: 0px 50px;
+        .scroll {
+          &::before {
+            width: 400px;
+            height: 200px;
+            top: -200px;
+          }
+          .scrollTitle {
+            font-size: 12px;
+            min-width: 65px;
+            bottom: 50px;
+          }
+        }
+      }
+    }
+    .ourServices {
+      .menu {
+        gap: 50px;
+        .menu--item {
+          font-size: 50px;
+          -webkit-text-stroke: 1px white;
         }
       }
     }

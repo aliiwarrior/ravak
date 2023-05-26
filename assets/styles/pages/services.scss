@@ -1,6 +1,8 @@
 .services {
   overflow-x: hidden;
-  height: 600vh;
+  * {
+    position: relative;
+  }
   .topDiv {
     width: 100%;
     margin-top: 180px;
@@ -41,7 +43,7 @@
       width: 100%;
       padding-left: 68px;
       padding-right: 120px;
-      align-items: end;
+      align-items: flex-end;
       .scroll {
         height: 110px;
         margin-top: 8px;
@@ -117,7 +119,7 @@
           font-style: normal;
           font-weight: 400;
           font-size: 145px;
-          margin-bottom: 100px;
+          line-height: 1em;
           color: #ffffff;
           text-shadow: 0px 11px 44px #000000;
         }
@@ -146,6 +148,68 @@
       background-size: cover;
       background-position: center;
       margin-bottom: 250px;
+    }
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .services {
+    .topDiv {
+      .rotateTitle {
+        margin-bottom: 150px;
+      }
+    }
+    .allServices {
+      .service {
+        padding-left: 100px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 720px) {
+  .services {
+    .topDiv {
+      margin-top: 0px;
+      margin-bottom: 150px;
+      .rotateTitle {
+        h1 {
+          max-width: 300px;
+          font-size: 50px;
+          line-height: 1.2em;
+        }
+        h2 {
+          font-size: 25px;
+          top: 111px;
+        }
+      }
+      .bottomOfDiv {
+        padding: 0px 50px;
+        .scroll {
+          &::before {
+            width: 400px;
+            height: 200px;
+            top: -200px;
+          }
+          .scrollTitle {
+            font-size: 12px;
+            min-width: 65px;
+            bottom: 50px;
+          }
+        }
+      }
+    }
+    .allServices {
+      .service {
+        padding-left: 50px;
+        .text {
+          h3 {
+            font-size: 40px;
+          }
+          p {
+            font-size: 25px;
+            line-height: 1.3em;
+          }
+        }
+      }
     }
   }
 }

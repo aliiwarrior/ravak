@@ -5,11 +5,38 @@
       <div class="yellowLine"></div>
       <div class="rightHead d-flex align-items-center">
         <div>EN</div>
-        <img src="/icons/bar.svg" @click="openMenu" class="bar" alt="bar" />
+        <img
+          src="/icons/bar.svg"
+          @mouseenter="$store.commit('turnOn')"
+          @mouseout="$store.commit('turnOff')"
+          @click="openMenu"
+          class="bar"
+          alt="bar"
+        />
       </div>
     </div>
     <div class="openMenu">
       <div class="menu">
+        <router-link to="/" class="menuItem">
+          <span v-if="link == 1" class="sandiego">YOU ARE HERE</span>
+          <div :class="{ activeMenu: link == 1 }">HOME</div>
+        </router-link>
+        <router-link to="/aboutUs" class="menuItem">
+          <span v-if="link == 2" class="sandiego">YOU ARE HERE</span>
+          <div :class="{ activeMenu: link == 2 }">WHO WE ARE</div>
+        </router-link>
+        <router-link to="/services" class="menuItem">
+          <span v-if="link == 3" class="sandiego">YOU ARE HERE</span>
+          <div :class="{ activeMenu: link == 3 }">SERVICES</div>
+        </router-link>
+        <router-link to="/projects" class="menuItem">
+          <span v-if="link == 4" class="sandiego">YOU ARE HERE</span>
+          <div :class="{ activeMenu: link == 4 }">PROJECTS</div>
+        </router-link>
+        <router-link to="/contactUs" class="menuItem">
+          <span v-if="link == 5" class="sandiego">YOU ARE HERE</span>
+          <div :class="{ activeMenu: link == 5 }">PROJECTS</div>
+        </router-link>
         <router-link to="/" class="menuItem">
           <span v-if="link == 1" class="sandiego">YOU ARE HERE</span>
           <div :class="{ activeMenu: link == 1 }">HOME</div>
@@ -39,9 +66,15 @@
           alt="x icon"
         />
         <div class="socials d-flex flex-column">
-          <img src="/icons/telegram.svg" class="telegram" alt="telegram" />
-          <img src="/icons/linkedin.svg" class="linkedin" alt="linkedin" />
-          <img src="/icons/instagram.svg" class="instagram" alt="instagram" />
+          <router-link to="/">
+            <img src="/icons/telegram.svg" class="telegram" alt="telegram" />
+          </router-link>
+          <router-link to="/">
+            <img src="/icons/linkedin.svg" class="linkedin" alt="linkedin" />
+          </router-link>
+          <router-link to="/">
+            <img src="/icons/instagram.svg" class="instagram" alt="instagram" />
+          </router-link>
         </div>
         <div class="terms">
           <div>Terms & Privacy</div>

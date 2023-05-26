@@ -12,7 +12,11 @@
     <div
       class="bottomOfFooter d-flex justify-content-between align-items-center"
     >
-      <p>@2023 Dayan Agency.All Right Reserved.</p>
+      <p>
+        @2023
+        <a href="//www.ravakagancy.com"> Ravak Agency </a>
+        .All Right Reserved.
+      </p>
       <div class="socials">
         <img src="/icons/telegram.svg" alt="telegram" />
         <img src="/icons/instagram.svg" alt="instagram" />

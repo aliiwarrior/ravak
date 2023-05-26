@@ -40,7 +40,7 @@
       width: 100%;
       padding-left: 68px;
       padding-right: 120px;
-      align-items: end;
+      align-items: flex-end;
       .scroll {
         height: 110px;
         margin-top: 8px;
@@ -157,6 +157,84 @@
         font-weight: 400;
         font-size: 30px;
         color: #ffffff;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .blogDetails {
+    .topDiv {
+      .rotateTitle {
+        margin-bottom: 150px;
+      }
+    }
+    .blog {
+      padding: 181px 100px;
+    }
+  }
+}
+@media only screen and (max-width: 720px) {
+  .blogDetails {
+    .topDiv {
+      margin-top: 0px;
+      margin-bottom: 150px;
+      .rotateTitle {
+        h1 {
+          max-width: 300px;
+          font-size: 50px;
+          line-height: 1.2em;
+        }
+        h2 {
+          font-size: 25px;
+          top: 111px;
+        }
+      }
+      .bottomOfDiv {
+        padding: 0px 50px;
+        .scroll {
+          &::before {
+            width: 400px;
+            height: 200px;
+            top: -200px;
+          }
+          .scrollTitle {
+            font-size: 12px;
+            min-width: 65px;
+            bottom: 50px;
+          }
+        }
+      }
+    }
+    .lines {
+      .verticalLine {
+        height: 250px;
+      }
+    }
+    .blog {
+      padding: 150px 50px;
+      .about {
+        .type {
+          font-size: 18px;
+        }
+        .date {
+          font-size: 13px;
+        }
+      }
+      .title {
+        font-size: 40px;
+        line-height: 1em;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.3em;
+      }
+      .share {
+        div {
+          font-size: 18px;
+        }
+        img {
+          width: 18px;
+        }
       }
     }
   }

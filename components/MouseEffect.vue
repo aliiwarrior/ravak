@@ -1,5 +1,5 @@
 <template>
-  <div class="mouseEffect"></div>
+  <div class="mouseEffect" :class="{ goMouse: $store.state.goMouse }"></div>
 </template>
 
 <script>

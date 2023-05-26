@@ -1,5 +1,6 @@
 <template>
   <div class="servicePage alternate">
+    <MouseEffect />
     <Header />
     <div class="topDiv">
       <div class="rotateTitle">
@@ -15,10 +16,18 @@
     </div>
     <div class="year2018">
       <div class="num sandiego">2018</div>
-      <img src="/images/serviceImg1.jpg" class="service1" alt="service" />
-      <img src="/images/serviceImg2.jpg" class="service2" alt="service" />
-      <img src="/images/serviceImg3.jpg" class="service3" alt="service" />
-      <img src="/images/serviceImg4.jpg" class="service4" alt="service" />
+      <router-link to="/" class="service1">
+        <img src="/images/serviceImg1.jpg" alt="service" />
+      </router-link>
+      <router-link to="/" class="service2">
+        <img src="/images/serviceImg2.jpg" alt="service" />
+      </router-link>
+      <router-link to="/" class="service3">
+        <img src="/images/serviceImg3.jpg" alt="service" />
+      </router-link>
+      <router-link to="/" class="service4">
+        <img src="/images/serviceImg4.jpg" alt="service" />
+      </router-link>
     </div>
   </div>
 </template>
@@ -31,6 +40,15 @@ export default {
     setTimeout(() => {
       // this.titleRotate();
       this.serviceAnime();
+      const links = document.getElementsByTagName("a");
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener("mouseenter", () => {
+          this.$store.commit("turnOn");
+        });
+        links[i].addEventListener("mouseout", () => {
+          this.$store.commit("turnOff");
+        });
+      }
     }, 10);
   },
   methods: {
@@ -83,6 +101,22 @@ export default {
       tl.to(".rotateTitle", { display: "none", duration: 0.5 });
       tl.to(".year2018", { scale: 5, duration: 12 });
       tl.to(".year2018", { display: "none", duration: 0.5 });
+    },
+  },
+  watch: {
+    "$route.path"() {
+      this.$store.commit("turnOff");
+      setTimeout(() => {
+        const links = document.getElementsByTagName("a");
+        for (var i = 0; i < links.length; i++) {
+          links[i].addEventListener("mouseenter", () => {
+            this.$store.commit("turnOn");
+          });
+          links[i].addEventListener("mouseout", () => {
+            this.$store.commit("turnOff");
+          });
+        }
+      }, 100);
     },
   },
 };

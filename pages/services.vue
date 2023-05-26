@@ -100,9 +100,9 @@ export default {
         scrollTrigger: {
           trigger: ".allServices",
           start: "top top",
-          end: "+=4000",
+          end: "+=600%",
           scrub: true,
-          //   markers: true,
+          // markers: true,
         },
       });
       tl.to(".allServices", { position: "fixed" });
