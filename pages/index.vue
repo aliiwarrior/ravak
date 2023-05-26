@@ -282,7 +282,7 @@ export default {
           start: "-100% center",
           end: "=+100% center",
           scrub: true,
-          markers: true,
+          // markers: true,
         },
         bottom: "100%",
       });
