@@ -8,7 +8,7 @@
     height: 160px;
     position: relative;
     .logo {
-      height: 58px;
+      height: 40px;
     }
     .yellowLine {
       display: inline-block;
@@ -25,9 +25,9 @@
       font-weight: 700;
       font-size: 15px;
       letter-spacing: 0.13em;
-      padding-bottom: 15px;
+      padding-bottom: 7px;
       img {
-        margin-left: 50px;
+        margin-left: 20px;
         cursor: pointer;
       }
     }
@@ -246,10 +246,10 @@
       padding: 0px 50px;
       height: 100px;
       .logo {
-        height: 35px;
+        height: 20px;
       }
       .rightHead {
-        padding-bottom: 8px;
+        padding-bottom: 0px;
         img {
           width: 35px;
         }

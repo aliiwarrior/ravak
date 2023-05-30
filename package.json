@@ -13,6 +13,7 @@
     "bootstrap": "^4.6.2",
     "bootstrap-vue": "^2.22.0",
     "core-js": "^3.25.3",
+    "css.escape": "^1.5.1",
     "gsap": "^3.11.4",
     "nuxt": "^2.15.8",
     "postcss": "^8.4.21",

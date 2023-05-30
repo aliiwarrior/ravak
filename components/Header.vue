@@ -4,7 +4,7 @@
       <img src="/images/logo.png" alt="logo" class="logo" />
       <div class="yellowLine"></div>
       <div class="rightHead d-flex align-items-center">
-        <div>EN</div>
+        <div>MENU</div>
         <img
           src="/icons/bar.svg"
           @mouseenter="$store.commit('turnOn')"

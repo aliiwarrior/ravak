@@ -26,7 +26,7 @@
           </p>
         </div>
       </div>
-      <div class="service service2">
+      <!-- <div class="service service2">
         <div class="text text2">
           <h3>SOCIAL MEDIA</h3>
           <p>
@@ -43,7 +43,7 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua
           </p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -100,18 +100,13 @@ export default {
         scrollTrigger: {
           trigger: ".allServices",
           start: "top top",
-          end: "+=600%",
+          end: "+=300%",
           scrub: true,
           // markers: true,
         },
       });
       tl.to(".allServices", { position: "fixed" });
       tl.to(".text1", { paddingTop: "0px", duration: 1 });
-      tl.to(".allServices", { top: "-100vh", duration: 1 });
-      tl.to(".text2", { paddingTop: "0px", duration: 1 });
-      tl.to(".allServices", { top: "-200vh", duration: 1 });
-      tl.to(".text3", { paddingTop: "0px", duration: 1 });
-      tl.to(".allServices", { top: "-300vh", duration: 1 });
     },
   },
 };
