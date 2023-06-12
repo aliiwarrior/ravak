@@ -3,11 +3,11 @@
     <div class="yellowLine"></div>
     <img src="/images/footerLogo.png" class="footerLogo" alt="footerLogo" />
     <div class="d-flex links justify-content-center">
-      <router-link to="/">Who We Are</router-link>
-      <router-link to="/">Our Services</router-link>
-      <router-link to="/">Projects</router-link>
-      <router-link to="/">Blog</router-link>
-      <router-link to="/">Get In Touch</router-link>
+      <router-link to="/aboutUs">Who We Are</router-link>
+      <router-link to="/services">Our Services</router-link>
+      <router-link to="/portfolio">Portfolio</router-link>
+      <router-link to="/blogs">Blog</router-link>
+      <router-link to="/contactUs">Get In Touch</router-link>
     </div>
     <div
       class="bottomOfFooter d-flex justify-content-between align-items-center"

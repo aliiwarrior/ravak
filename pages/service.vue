@@ -153,9 +153,15 @@ export default {
       getClass.style.top = "0";
       getClass.style.left = "0";
       getClass.style.zIndex = "9";
-      document
-        .getElementsByClassName(className)[0]
-        .getElementsByTagName("img")[0].style.width = "22%";
+      if (window.innerWidth > 720) {
+        document
+          .getElementsByClassName(className)[0]
+          .getElementsByTagName("img")[0].style.width = "22%";
+      } else {
+        document
+          .getElementsByClassName(className)[0]
+          .getElementsByTagName("img")[0].style.width = "50%";
+      }
       document
         .getElementsByClassName(className)[0]
         .getElementsByTagName("img")[0].style.height = "auto";
@@ -210,31 +216,60 @@ export default {
     },
     closeThis(className) {
       var getClass = document.getElementsByClassName(className)[0];
-      if (className == "myService1") {
-        getClass.style.width = "250px";
-        getClass.style.height = "140px";
-        getClass.style.left = "23%";
-        getClass.style.top = "33%";
-        getClass.style.zIndex = "6";
-      } else if (className == "myService2") {
-        getClass.style.width = "184px";
-        getClass.style.height = "104.53px";
-        getClass.style.left = "60%";
-        getClass.style.top = "12%";
-        getClass.style.zIndex = "5";
-      } else if (className == "myService3") {
-        getClass.style.width = "201.79px";
-        getClass.style.height = "113px";
-        getClass.style.left = "32%";
-        getClass.style.top = "37%";
-        getClass.style.zIndex = "4";
+      if (window.innerWidth > 720) {
+        if (className == "myService1") {
+          getClass.style.width = "250px";
+          getClass.style.height = "140px";
+          getClass.style.left = "23%";
+          getClass.style.top = "33%";
+          getClass.style.zIndex = "6";
+        } else if (className == "myService2") {
+          getClass.style.width = "184px";
+          getClass.style.height = "104.53px";
+          getClass.style.left = "60%";
+          getClass.style.top = "12%";
+          getClass.style.zIndex = "5";
+        } else if (className == "myService3") {
+          getClass.style.width = "201.79px";
+          getClass.style.height = "113px";
+          getClass.style.left = "32%";
+          getClass.style.top = "37%";
+          getClass.style.zIndex = "4";
+        } else {
+          getClass.style.width = "173px";
+          getClass.style.height = "96.88px";
+          getClass.style.left = "57%";
+          getClass.style.top = "30%";
+          getClass.style.zIndex = "3";
+        }
       } else {
-        getClass.style.width = "173px";
-        getClass.style.height = "96.88px";
-        getClass.style.left = "57%";
-        getClass.style.top = "30%";
-        getClass.style.zIndex = "3";
+        if (className == "myService1") {
+          getClass.style.width = "250px";
+          getClass.style.height = "140px";
+          getClass.style.left = "4%";
+          getClass.style.top = "19%";
+          getClass.style.zIndex = "6";
+        } else if (className == "myService2") {
+          getClass.style.width = "184px";
+          getClass.style.height = "104.53px";
+          getClass.style.left = "47%";
+          getClass.style.top = "14%";
+          getClass.style.zIndex = "5";
+        } else if (className == "myService3") {
+          getClass.style.width = "201.79px";
+          getClass.style.height = "113px";
+          getClass.style.left = "10%";
+          getClass.style.top = "20%";
+          getClass.style.zIndex = "4";
+        } else {
+          getClass.style.width = "173px";
+          getClass.style.height = "96.88px";
+          getClass.style.left = "46%";
+          getClass.style.top = "15%";
+          getClass.style.zIndex = "3";
+        }
       }
+
       getClass.style.position = "relative";
 
       document

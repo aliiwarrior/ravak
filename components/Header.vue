@@ -29,13 +29,13 @@
           <span v-if="link == 3" class="sandiego">YOU ARE HERE</span>
           <div :class="{ activeMenu: link == 3 }">SERVICES</div>
         </router-link>
-        <router-link to="/projects" class="menuItem">
+        <router-link to="/portfolio" class="menuItem">
           <span v-if="link == 4" class="sandiego">YOU ARE HERE</span>
-          <div :class="{ activeMenu: link == 4 }">PROJECTS</div>
+          <div :class="{ activeMenu: link == 4 }">PORTFOLIO</div>
         </router-link>
         <router-link to="/contactUs" class="menuItem">
           <span v-if="link == 5" class="sandiego">YOU ARE HERE</span>
-          <div :class="{ activeMenu: link == 5 }">PROJECTS</div>
+          <div :class="{ activeMenu: link == 5 }">GET IN TOUCH</div>
         </router-link>
         <router-link to="/" class="menuItem">
           <span v-if="link == 1" class="sandiego">YOU ARE HERE</span>
