@@ -58,6 +58,7 @@
               <div class="name">MEHRDAD MOZAFARI</div>
             </div>
           </div>
+          <div class="effect2"></div>
         </div>
         <div class="team">
           <img src="/images/team2.jpg" alt="team" />
@@ -68,6 +69,7 @@
               <div class="name">MEHRDAD MOZAFARI</div>
             </div>
           </div>
+          <div class="effect2"></div>
         </div>
         <div class="team">
           <img src="/images/team3.jpg" alt="team" />
@@ -78,6 +80,7 @@
               <div class="name">MEHRDAD MOZAFARI</div>
             </div>
           </div>
+          <div class="effect2"></div>
         </div>
         <div class="team">
           <img src="/images/team4.jpg" alt="team" />
@@ -88,6 +91,7 @@
               <div class="name">MEHRDAD MOZAFARI</div>
             </div>
           </div>
+          <div class="effect2"></div>
         </div>
         <div class="team">
           <img src="/images/team5.jpg" alt="team" />
@@ -98,6 +102,7 @@
               <div class="name">MEHRDAD MOZAFARI</div>
             </div>
           </div>
+          <div class="effect2"></div>
         </div>
         <div class="team">
           <img src="/images/team6.jpg" alt="team" />
@@ -108,6 +113,7 @@
               <div class="name">MEHRDAD MOZAFARI</div>
             </div>
           </div>
+          <div class="effect2"></div>
         </div>
       </div>
     </div>

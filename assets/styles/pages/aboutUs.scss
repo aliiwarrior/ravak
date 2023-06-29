@@ -209,23 +209,36 @@
         position: relative;
         overflow: hidden;
         &:hover {
-          .effect {
+          .effect,
+          .effect2 {
             transform: translateY(0);
           }
         }
         img {
           width: 100%;
         }
+        .effect2 {
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+          background-color: rgb(255 200 47 / 60%);
+          mix-blend-mode: multiply;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translateY(101%);
+          transition: transform 1s;
+          z-index: 1;
+        }
         .effect {
           width: 100%;
           height: 100%;
           padding: 70px 65px;
-          background-color: rgb(255 200 47 / 60%);
-          mix-blend-mode: multiply;
           display: flex;
           flex-direction: column;
           position: absolute;
           top: 0;
+          z-index: 3;
           justify-content: space-between;
           transform: translateY(101%);
           transition: transform 1s;
@@ -246,7 +259,7 @@
             font-style: normal;
             font-weight: 400;
             font-size: 50px;
-            line-height: 24px;
+            line-height: 1em;
             color: #ffffff;
             mix-blend-mode: normal;
           }
@@ -341,6 +354,23 @@
       }
       .body {
         padding-right: 50px;
+        .team {
+          width: 100%;
+          .effect {
+            padding: 15px;
+            img {
+              width: 40px;
+            }
+            .position {
+              font-size: 20px;
+              margin-left: 5px;
+            }
+            .name {
+              font-size: 35px;
+              margin-left: 5px;
+            }
+          }
+        }
       }
     }
   }
